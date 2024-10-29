@@ -1,0 +1,148 @@
+:root {
+    --azul-claro: #3C6AA6;
+    --azul-medio: #263F8C;
+    --azul-escuro: #071040;
+    --cinza: #5B5B5B;
+    --cinza-claro: #D9D9D9;
+    --branco: #F0EBE5;
+    --bege: #DCD1BF;
+    --preto: #000000;
+}
+
+.paginas[href="aluno.html"]{
+    text-decoration: underline;
+}
+
+body{
+    background-color: var(--bege);
+}
+
+table {
+    width: 90%;
+    margin: auto auto;
+    margin-top: 5%;
+    font-family: 'Be Vietnam Pro';
+    table-layout: fixed;
+}
+
+table tr:hover {
+    background-color: var(--cinza-claro);
+    color: var(--branco);
+}
+
+table tr:hover img {
+    filter: brightness(1.2);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+table tr:hover td {
+    border-color: var(--branco);
+    color: var(--preto);
+}
+
+table th {
+    background-color: var(--cinza);
+    color: white;
+    height: 4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+table tr {
+    background-color: var(--cinza);
+    color: white;
+    height: 3.5rem;
+}
+
+th, td {
+    text-align: center;
+}
+
+td img {
+    filter: invert(0.9);
+    width: 15%;
+    margin: 0.4rem;
+}
+
+td img:hover {
+    filter: invert(0);
+    width: 15%;
+    margin: 0.4rem;
+}
+
+/* Estilo para a primeira coluna (ID ALUNO) */
+table th:nth-child(1),
+table td:nth-child(1) {
+    width: 9%; /* Define 5% da largura total da tabela */
+}
+
+/* Estilo para a segunda coluna (RA) */
+table th:nth-child(2),
+table td:nth-child(2) {
+    width: 10%;
+}
+
+/* Estilo para a terceira coluna (NOME) */
+table th:nth-child(3),
+table td:nth-child(3) {
+    width: 12%;
+}
+
+/* Estilo para a quarta coluna (SOBRENOME) */
+table th:nth-child(4),
+table td:nth-child(4) {
+    width: 12%;
+}
+
+/* Estilo para a quinta coluna (DATA DE NASCIMENTO) */
+table th:nth-child(5),
+table td:nth-child(5) {
+    width: 15%;
+}
+
+/* Estilo para a sexta coluna (ENDEREÇO) */
+table th:nth-child(6),
+table td:nth-child(6) {
+    width: 14%;
+}
+
+/* Estilo para a sétima coluna (EMAIL) */
+table th:nth-child(7),
+table td:nth-child(7) {
+    width: 17%;
+}
+
+/* Estilo para a oitava coluna (CELULAR) */
+table th:nth-child(8),
+table td:nth-child(8) {
+    width: 10%;
+}
+
+/* Estilo para a nona coluna (AÇÕES) */
+table th:nth-child(9),
+table td:nth-child(9) {
+    width: 11%;
+}
+
+.button{
+    background-color: var(--azul-claro);
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    border-radius: 15px;
+}
+
+.novo-aluno a{
+    font-family: 'Brawler';
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--branco);
+    text-decoration: solid;
+}
+
+.painel{
+    margin-top: 30vh;
+}

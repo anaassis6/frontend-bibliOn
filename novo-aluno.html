@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BibliOn</title>
+    <link rel="stylesheet" href="/css/principal.css">
+    <link rel="stylesheet" href="/css/cadastro-editar.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/logoSemFundo.png" alt="logo">
+        <div class="esquerda">
+            <div class="nome-header"> BIBLION </div>
+            <div class="slogan"> Cada livro é uma porta <br> para mundos infinitos! </div>
+        </div>
+        <div class="direita">
+            <nav>
+                <a class="paginas" href="aluno.html">ALUNO</a>
+                <a class="paginas" href="livro.html">LIVROS</a>
+                <a class="paginas" href="emprestimo.html">EMPRÉSTIMO</a>
+            </nav>
+        </div>
+    </header>
+    <h1>CADASTRO DE ALUNO</h1>
+    <div class="container-formulario">
+        <form action="">
+            <label for="nome">
+                Nome
+                <br>
+                <input type="text" name="input-nome-aluno" required>
+            </label>
+            <label for="sobrenome">
+                Sobrenome
+                <br>
+                <input type="text" name="input-sobrenome-aluno" required>
+            </label>
+            <label for="data-de-nascimento">
+                Data de Nascimento (opcional)
+                <br>
+                <input type="date" name="input-nascimento-aluno">
+            </label>
+            <label for="endereco">
+                Endereço (opcional)
+                <br>
+                <input type="text" name="input-endereco-aluno">
+            </label>
+            <label for="email">
+                Email (opcional)
+                <br>
+                <input type="text" name="input-email-aluno">
+            </label>
+            <label for="celular">
+                Celular
+                <br>
+                <input type="number" name="input-celular-aluno" required>
+            </label>
+
+            <input type="button" value="CADASTRAR">
+        </form>
+</body>
+
+</html>

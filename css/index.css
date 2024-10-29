@@ -1,0 +1,29 @@
+body{
+    background-image: url(/assets/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--branco);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.titulo{
+    font-size: 65px;
+    padding-bottom: 20px;
+}
+
+.boas-vindas{
+    font-size: 37px;
+    text-align: center;
+    max-width: 800px;
+    background-color:#3C6AA695;
+    border-radius: 20px;
+    font-family: 'Brawler';
+    font-weight: bold;
+}
