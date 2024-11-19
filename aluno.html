@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BibliOn</title>
     <link rel="stylesheet" href="/css/principal.css">
-    <link rel="stylesheet" href="/css/listagem.css">
+    <link rel="stylesheet" href="/css/listagem-aluno.css">
+    <link rel="shortcut icon" href="/assets/favicon.png"/>
 </head>
 
-<body>
+<body onload="recuperarListaAlunos()">
     <header>
         <img class="logo" src="assets/logoSemFundo.png" alt="logo">
         <div class="esquerda">
@@ -18,7 +19,8 @@
         </div>
         <div class="direita">
             <nav>
-                <a class="paginas" href="aluno.html">ALUNO</a>
+                <a class="paginas" href="index.html">INÍCIO</a>
+                <a class="atual" href="aluno.html">ALUNO</a>
                 <a class="paginas" href="livro.html">LIVROS</a>
                 <a class="paginas" href="emprestimo.html">EMPRÉSTIMO</a>
             </nav>
@@ -45,67 +47,13 @@
                         <th>AÇÕES</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td></td>
-                        <td>Conor</td>
-                        <td>McGregor</td>
-                        <td>2005/01/15</td>
-                        <td>Rua UFC, 123</td>
-                        <td>mcgregor@ufc.com</td>
-                        <td>(16)998959876</td>
-                        <td>
-                            <img src="assets/icons/pencil-square.svg" alt="editar">
-                            <img src="assets/icons/trash-fill.svg" alt="excluir">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td></td>
-                        <td>Amanda</td>
-                        <td>Nunes</td>
-                        <td>2004/03/22</td>
-                        <td>Rua UFC, 456</td>
-                        <td>amanda.nunes@ufc.com</td>
-                        <td>(16)995992305</td>
-                        <td>
-                            <img src="assets/icons/pencil-square.svg" alt="editar">
-                            <img src="assets/icons/trash-fill.svg" alt="excluir">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td></td>
-                        <td>Angelina</td>
-                        <td>Jolie</td>
-                        <td>2003/07/10</td>
-                        <td>Rua Hollywood, 789</td>
-                        <td>jolie@cinema.com</td>
-                        <td>(16)991915502</td>
-                        <td>
-                            <img src="assets/icons/pencil-square.svg" alt="editar">
-                            <img src="assets/icons/trash-fill.svg" alt="excluir">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td></td>
-                        <td>Natalie</td>
-                        <td>Portman</td>
-                        <td>2002/11/05</td>
-                        <td>Rua Hollywood, 101</td>
-                        <td>natalie.portman@cinema.com</td>
-                        <td>(16)993930703</td>
-                        <td>
-                            <img src="assets/icons/pencil-square.svg" alt="editar">
-                            <img src="assets/icons/trash-fill.svg" alt="excluir">
-                        </td>
-                    </tr>
+                <tbody id="tabela">
                 </tbody>
             </table>
         </div>
     </div>
+
+    <script src="js/aluno.js"></script>
 </body>
 
 </html>

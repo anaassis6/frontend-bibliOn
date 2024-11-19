@@ -9,10 +9,6 @@
     --preto: #000000;
 }
 
-.paginas[href="aluno.html"]{
-    text-decoration: underline;
-}
-
 body{
     background-color: var(--bege);
 }
@@ -44,14 +40,15 @@ table th {
     background-color: var(--cinza);
     color: white;
     height: 4rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 table tr {
     background-color: var(--cinza);
     color: white;
-    height: 3.5rem;
+    height: 3rem;
+    font-size: 0.8rem;
 }
 
 th, td {
@@ -66,14 +63,15 @@ td img {
 
 td img:hover {
     filter: invert(0);
-    width: 15%;
+    width: 20%;
     margin: 0.4rem;
 }
 
 /* Estilo para a primeira coluna (ID ALUNO) */
 table th:nth-child(1),
 table td:nth-child(1) {
-    width: 9%; /* Define 5% da largura total da tabela */
+    width: 9%; 
+    font-weight: bold;
 }
 
 /* Estilo para a segunda coluna (RA) */
@@ -97,7 +95,7 @@ table td:nth-child(4) {
 /* Estilo para a quinta coluna (DATA DE NASCIMENTO) */
 table th:nth-child(5),
 table td:nth-child(5) {
-    width: 15%;
+    width: 13%;
 }
 
 /* Estilo para a sexta coluna (ENDEREÇO) */
@@ -109,25 +107,25 @@ table td:nth-child(6) {
 /* Estilo para a sétima coluna (EMAIL) */
 table th:nth-child(7),
 table td:nth-child(7) {
-    width: 17%;
+    width: 19%;
 }
 
 /* Estilo para a oitava coluna (CELULAR) */
 table th:nth-child(8),
 table td:nth-child(8) {
-    width: 10%;
+    width: 11%;
 }
 
 /* Estilo para a nona coluna (AÇÕES) */
 table th:nth-child(9),
 table td:nth-child(9) {
-    width: 11%;
+    width: 9%;
 }
 
 .button{
     background-color: var(--azul-claro);
-    width: 90%;
-    height: 70px;
+    width: 85%;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,11 +136,11 @@ table td:nth-child(9) {
 .novo-aluno a{
     font-family: 'Brawler';
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--branco);
     text-decoration: solid;
 }
 
 .painel{
-    margin-top: 30vh;
+    margin-top: 25vh;
 }

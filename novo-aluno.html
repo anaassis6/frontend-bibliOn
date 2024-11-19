@@ -7,6 +7,7 @@
     <title>BibliOn</title>
     <link rel="stylesheet" href="/css/principal.css">
     <link rel="stylesheet" href="/css/cadastro-editar.css">
+    <link rel="shortcut icon" href="/assets/favicon.png"/>
 </head>
 
 <body>
@@ -18,7 +19,8 @@
         </div>
         <div class="direita">
             <nav>
-                <a class="paginas" href="aluno.html">ALUNO</a>
+                <a class="paginas" href="index.html">INÍCIO</a>
+                <a class="atual" href="aluno.html">ALUNO</a>
                 <a class="paginas" href="livro.html">LIVROS</a>
                 <a class="paginas" href="emprestimo.html">EMPRÉSTIMO</a>
             </nav>
@@ -55,11 +57,12 @@
             <label for="celular">
                 Celular
                 <br>
-                <input type="number" name="input-celular-aluno" required>
+                <input type="text" name="input-celular-aluno" required>
             </label>
 
-            <input type="button" value="CADASTRAR">
+            <input type="button" value="CADASTRAR" onclick="enviaFormulario()">
         </form>
+        <script src="js/aluno.js"></script>
 </body>
 
 </html>

@@ -20,47 +20,42 @@
         <div class="direita">
             <nav>
                 <a class="paginas" href="index.html">INÍCIO</a>
-                <a class="atual" href="aluno.html">ALUNO</a>
+                <a class="paginas" href="aluno.html">ALUNO</a>
                 <a class="paginas" href="livro.html">LIVROS</a>
-                <a class="paginas" href="emprestimo.html">EMPRÉSTIMO</a>
+                <a class="atual" href="emprestimo.html">EMPRÉSTIMO</a>
             </nav>
         </div>
     </header>
-    <h1>EDITAR CADASTRO DE ALUNOS</h1>
+    <h1>DEVOLUÇÃO DE LIVROS</h1>
     <div class="container-formulario">
         <form action="">
-            <label for="nome">
-                Nome
+            <label for="id-aluno">
+                ID Aluno
                 <br>
-                <input type="text" name="input-nome-aluno" required>
+                <input type="number" name="input-id-aluno" required>
             </label>
-            <label for="sobrenome">
-                Sobrenome
+            <label for="id-livro">
+                ID Livro
                 <br>
-                <input type="text" name="input-sobrenome-aluno" required>
+                <input type="number" name="input-id-livro" required>
             </label>
-            <label for="data-de-nascimento">
-                Data de Nascimento (opcional)
+            <label for="data-emprestimo">
+                Data de Empréstimo 
                 <br>
-                <input type="date" name="input-nascimento-aluno">
+                <input type="date" name="input-data-emprestimo" required>
             </label>
-            <label for="endereco">
-                Endereço (opcional)
+            <label for="data-devolucao">
+                Data de Devolução (opcional)
                 <br>
-                <input type="text" name="input-endereco-aluno">
+                <input type="date" name="input-devolucao-emprestimo">
             </label>
-            <label for="email">
-                Email (opcional)
+            <label for="status-emprestimo">
+                Status do Empréstimo
                 <br>
-                <input type="text" name="input-email-aluno">
-            </label>
-            <label for="celular">
-                Celular
-                <br>
-                <input type="number" name="input-celular-aluno" required>
+                <input type="text" name="input-status-emprestimo">
             </label>
 
-            <input type="button" value="ATUALIZAR">
+            <input type="button" value="REGISTRAR">
         </form>
 </body>
 

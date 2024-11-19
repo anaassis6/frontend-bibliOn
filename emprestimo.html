@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BibliOn</title>
+    <link rel="stylesheet" href="/css/principal.css">
+    <link rel="stylesheet" href="/css/listagem-emprestimo.css">
+    <link rel="shortcut icon" href="/assets/favicon.png"/>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/logoSemFundo.png" alt="logo">
+        <div class="esquerda">
+            <div class="nome-header"> BIBLION </div>
+            <div class="slogan"> Cada livro é uma porta <br> para mundos infinitos! </div>
+        </div>
+        <div class="direita">
+            <nav>
+                <a class="paginas" href="index.html">INÍCIO</a>
+                <a class="paginas" href="aluno.html">ALUNO</a>
+                <a class="paginas" href="livro.html">LIVROS</a>
+                <a class="atual" href="emprestimo.html">EMPRÉSTIMO</a>
+            </nav>
+        </div>
+    </header>
+    <div class="painel">
+        <div class="button">
+            <div class="novo-emprestimo">
+                <a href="novo-emprestimo.html">NOVO EMPRÉSTIMO</a>
+            </div>
+        </div>
+        <div class="container-tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID EMPRÉSTIMO</th>
+                        <th>ID ALUNO</th>
+                        <th>ID LIVRO</th>
+                        <th>DATA DE EMPRÉSTIMO</th>
+                        <th>DATA DE DEVOLUÇÃO</th>
+                        <th>STATUS DO EMPRÉSTIMO</th>
+                        <th>AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2024/09/01</td>
+                        <td>2024/09/15</td>
+                        <td>Em andamento</td>
+                        <td>
+                            <a href="devolucao-emprestimo.html">
+                                <img src="assets/icons/pencil-square.svg" alt="editar">
+                            </a>
+                            <img src="assets/icons/trash-fill.svg" alt="excluir">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2024/09/02</td>
+                        <td>2024/09/16</td>
+                        <td>Em andamento</td>
+                        <td>
+                            <a href="devolucao-emprestimo.html">
+                                <img src="assets/icons/pencil-square.svg" alt="editar">
+                            </a>
+                            <img src="assets/icons/trash-fill.svg" alt="excluir">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>2024/09/02</td>
+                        <td>2024/09/16</td>
+                        <td>Em andamento</td>
+                        <td>
+                            <a href="devolucao-emprestimo.html">
+                                <img src="assets/icons/pencil-square.svg" alt="editar">
+                            </a>
+                            <img src="assets/icons/trash-fill.svg" alt="excluir">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>2024/09/04</td>
+                        <td>2024/09/03</td>
+                        <td>Em andamento</td>
+                        <td>
+                            <a href="devolucao-emprestimo.html">
+                                <img src="assets/icons/pencil-square.svg" alt="editar">
+                            </a>
+                            <img src="assets/icons/trash-fill.svg" alt="excluir">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

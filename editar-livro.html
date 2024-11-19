@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BibliOn</title>
+    <link rel="stylesheet" href="/css/principal.css">
+    <link rel="stylesheet" href="/css/cadastro-editar.css">
+    <link rel="shortcut icon" href="/assets/favicon.png"/>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/logoSemFundo.png" alt="logo">
+        <div class="esquerda">
+            <div class="nome-header"> BIBLION </div>
+            <div class="slogan"> Cada livro é uma porta <br> para mundos infinitos! </div>
+        </div>
+        <div class="direita">
+            <nav>
+                <a class="paginas" href="index.html">INÍCIO</a>
+                <a class="paginas" href="aluno.html">ALUNO</a>
+                <a class="atual" href="livro.html">LIVROS</a>
+                <a class="paginas" href="emprestimo.html">EMPRÉSTIMO</a>
+            </nav>
+        </div>
+    </header>
+    <h1>EDITAR CADASTRO DE LIVRO</h1>
+    <div class="container-formulario">
+        <form action="">
+            <label for="titulo">
+                Título
+                <br>
+                <input type="text" name="input-titulo-livro" required>
+            </label>
+            <label for="autor">
+                Autor
+                <br>
+                <input type="text" name="input-autor-livro" required>
+            </label>
+            <label for="editora">
+                Editora
+                <br>
+                <input type="text" name="input-editora-livro" required>
+            </label>
+            <label for="ano-publicacao">
+                Ano de publicação (opcional)
+                <br>
+                <input type="text" name="input-ano-livro">
+            </label>
+            <label for="isbn">
+                ISBN (opcional)
+                <br>
+                <input type="text" name="input-isbn-livro">
+            </label>
+            <label for="quant-total">
+                Quantidade Total
+                <br>
+                <input type="number" name="input-total-livro" required>
+            </label>
+            <label for="quant-disp">
+                Quantidade Disponível
+                <br>
+                <input type="number" name="input-disponivel-livro" required>
+            </label>
+            <label for="valor">
+                Valor de Aquisição
+                <br>
+                <input type="number" name="input-valor-livro">
+            </label>
+            <label for="status">
+                Status do livro emprestado
+                <br>
+                <input type="text" name="input-status-livro">
+            </label>
+
+            <input type="button" value="ATUALIZAR">
+        </form>
+</body>
+
+</html>
