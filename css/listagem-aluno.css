@@ -9,7 +9,7 @@
     --preto: #000000;
 }
 
-body{
+body {
     background-color: var(--bege);
 }
 
@@ -51,8 +51,11 @@ table tr {
     font-size: 0.8rem;
 }
 
-th, td {
+th,
+td {
     text-align: center;
+    word-wrap: break-word;
+    padding: 2px;
 }
 
 td img {
@@ -70,7 +73,7 @@ td img:hover {
 /* Estilo para a primeira coluna (ID ALUNO) */
 table th:nth-child(1),
 table td:nth-child(1) {
-    width: 9%; 
+    width: 9%;
     font-weight: bold;
 }
 
@@ -122,7 +125,7 @@ table td:nth-child(9) {
     width: 9%;
 }
 
-.button{
+.button {
     background-color: var(--azul-claro);
     width: 85%;
     height: 60px;
@@ -133,7 +136,7 @@ table td:nth-child(9) {
     border-radius: 15px;
 }
 
-.novo-aluno a{
+.novo-aluno a {
     font-family: 'Brawler';
     font-weight: bold;
     font-size: 20px;
@@ -141,6 +144,6 @@ table td:nth-child(9) {
     text-decoration: solid;
 }
 
-.painel{
+.painel {
     margin-top: 25vh;
 }

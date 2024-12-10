@@ -17,11 +17,11 @@ async function enviaFormulario() {
             },
             body: JSON.stringify(alunoDTO)
         });
-    
-        if(!respostaServidor.ok) {
+
+        if (!respostaServidor.ok) {
             throw new Error("Erro ao enviar os dados para o servidor. Contate o administrador do sistema");
         }
-    
+
         alert("Aluno cadastrado com sucesso!");
     } catch (error) {
         console.log(error);
@@ -67,7 +67,9 @@ async function criarTabelaAlunos(alunos) {
         sobrenome.textContent = aluno.sobrenome; // sobrenome do aluno
 
         const dataNascimento = document.createElement('td');
-        dataNascimento.textContent = aluno.dataNascimento; // data de nascimento do aluno
+        //Formatação de data
+        const dataFormatada = new Date(aluno.dataNascimento).toISOString().split('T')[0];
+        dataNascimento.textContent = dataFormatada; // data de nascimento formatada
 
         const endereco = document.createElement('td');
         endereco.textContent = aluno.endereco; // endereco do aluno
@@ -82,6 +84,11 @@ async function criarTabelaAlunos(alunos) {
 
         const atualizarIcon = document.createElement('img');
         atualizarIcon.src = 'assets/icons/pencil-square.svg';
+
+        //link para página de edição
+        atualizarIcon.addEventListener('click', () => {
+            window.location.href = `editar-aluno.html`;
+        });
 
         const excluirIcon = document.createElement('img');
         excluirIcon.src = 'assets/icons/trash-fill.svg';

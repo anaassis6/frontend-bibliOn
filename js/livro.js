@@ -6,9 +6,9 @@ async function enviaFormulario() {
         "editora": document.querySelectorAll("input")[2].value,
         "anoPublicacao": document.querySelectorAll("input")[3].value,
         "isbn": document.querySelectorAll("input")[4].value,
-        "quantTotal": Number (document.querySelectorAll("input")[5].value),
-        "quantDisponivel":  Number (document.querySelectorAll("input")[6].value),
-        "valorAquisicao": Number (document.querySelectorAll("input")[7].value),
+        "quantTotal": Number(document.querySelectorAll("input")[5].value),
+        "quantDisponivel": Number(document.querySelectorAll("input")[6].value),
+        "valorAquisicao": Number(document.querySelectorAll("input")[7].value),
         "statusLivroEmprestado": document.querySelectorAll("input")[8].value
     }
 
@@ -91,6 +91,11 @@ async function criarTabelaLivros(livros) {
 
         const atualizarIcon = document.createElement('img');
         atualizarIcon.src = 'assets/icons/pencil-square.svg';
+
+        //link para página de edição
+        atualizarIcon.addEventListener('click', () => {
+            window.location.href = `editar-livro.html`;
+        });
 
         const excluirIcon = document.createElement('img');
         excluirIcon.src = 'assets/icons/trash-fill.svg';

@@ -9,7 +9,7 @@
     --preto: #000000;
 }
 
-body{
+body {
     background-color: var(--bege);
 }
 
@@ -51,7 +51,8 @@ table tr {
     font-size: 0.8rem;
 }
 
-th, td {
+th,
+td {
     text-align: center;
 }
 
@@ -70,7 +71,7 @@ td img:hover {
 /* Estilo para a primeira coluna (ID ALUNO) */
 table th:nth-child(1),
 table td:nth-child(1) {
-    width: 8%; 
+    width: 8%;
     font-weight: bold;
 }
 
@@ -134,7 +135,7 @@ table td:nth-child(11) {
     width: 10%;
 }
 
-.button{
+.button {
     background-color: var(--azul-claro);
     width: 85%;
     height: 60px;
@@ -145,7 +146,7 @@ table td:nth-child(11) {
     border-radius: 15px;
 }
 
-.novo-livro a{
+.novo-livro a {
     font-family: 'Brawler';
     font-weight: bold;
     font-size: 20px;
@@ -153,6 +154,6 @@ table td:nth-child(11) {
     text-decoration: solid;
 }
 
-.painel{
+.painel {
     margin-top: 25vh;
 }

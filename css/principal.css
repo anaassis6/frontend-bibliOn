@@ -20,7 +20,7 @@
     padding: 0;
 }
 
-header{
+header {
     width: 100%;
     position: fixed;
     top: 0;
@@ -29,17 +29,17 @@ header{
     background-color: var(--azul-medio);
     display: flex;
     flex-direction: row;
-    color: var(--branco);    
+    color: var(--branco);
 }
 
-.direita{
-    width:80%;
+.direita {
+    width: 80%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 }
 
-.paginas{
+.paginas {
     color: var(--branco);
     font-size: 27px;
     font-family: 'Brawler';
@@ -48,7 +48,7 @@ header{
     padding: 30px;
 }
 
-.atual{
+.atual {
     color: var(--branco);
     font-size: 27px;
     font-family: 'Brawler';
@@ -58,28 +58,27 @@ header{
     text-decoration: underline;
 }
 
-.esquerda{
+.esquerda {
     width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 30px;
-    padding-bottom:7px ;
+    padding-bottom: 7px;
 }
 
-.nome-header{
+.nome-header {
     font-size: 40px;
     font-family: 'Rajdhani';
 }
-.slogan{
+
+.slogan {
     font-size: 14px;
     font-family: 'Brawler';
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
     margin-left: 40px;
 }
-
-
